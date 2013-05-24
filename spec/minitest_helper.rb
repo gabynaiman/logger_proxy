@@ -1,5 +1,11 @@
 require 'simplecov'
-SimpleCov.start if ENV['COVERAGE']
+require 'coveralls'
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+SimpleCov.start
 
 require 'minitest/autorun'
 require 'turn'
