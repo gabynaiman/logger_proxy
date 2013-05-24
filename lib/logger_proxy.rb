@@ -2,9 +2,9 @@ class LoggerProxy
 
   LEVELS = [:debug, :info, :warn, :error, :fatal].freeze
 
-  def initialize(logger, context)
-    @logger = logger
+  def initialize(context, logger)
     @context = context
+    @logger = logger
   end
 
   LEVELS.each do |level|

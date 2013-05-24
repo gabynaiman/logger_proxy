@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/gabynaiman/logger_proxy.png?branch=master)](https://travis-ci.org/gabynaiman/logger_proxy)
 
-TODO: Write a gem description
+Logger proxy
 
 ## Installation
 
@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    MyGem.setup do |config|
+      config.logger = LoggerProxy.new 'MyGem', Rails.logger
+    end
+
+    logger.info 'Processing ...' # => 'TIME INFO - [MyGem] Processing ...'
 
 ## Contributing
 
