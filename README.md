@@ -1,6 +1,7 @@
 # LoggerProxy
 
 [![Build Status](https://travis-ci.org/gabynaiman/logger_proxy.png?branch=master)](https://travis-ci.org/gabynaiman/logger_proxy)
+[![Code Climate](https://codeclimate.com/github/gabynaiman/logger_proxy.png)](https://codeclimate.com/github/gabynaiman/logger_proxy)
 
 Logger proxy
 
